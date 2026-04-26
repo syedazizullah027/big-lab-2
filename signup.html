@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up | Personal Expense Tracker</title>
+    <link rel="stylesheet" href="css/signup.css">
+</head>
+<body>
+    <header>
+        <h1 class = 'main-heading1'>Personal Expense Tracker</h1>
+        <hr>
+        <nav>
+            <a href="index.html">Home</a> |
+            <a href="dashboard.html">Dashboard</a> |
+            <a href="add-transacction.html">Add Transaction</a> |
+            <a href="transaction.html">Transactions</a> |
+            <a href="login.html">Logout</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2 class = 'main-heading2'>Create Your Account</h2>
+            <!-- <p>Join the Personal Expense Tracker community today!</p> -->
+            
+            <form action="">
+                <!-- Full Name Field -->
+                <label for="fullname">Full Name:</label><br>
+                <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required><br><br>
+
+                <!-- Email Field -->
+                 <label for="email">Email Address:</label><br>
+                 <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+
+                 <!-- Password Field -->
+                  <label for="password">Password</label><br>
+                  <input type="password" id="password" name="password" placeholder="Create a stong password" required><br><br>
+
+                  <!-- Confirm Password Field -->
+                   <label for="confirm-password">Confirm Password</label><br>
+                   <input type="password" id="confirm-password" name="confirm-password" placeholder="Re-enter your password" required><br><br>
+
+                   <!-- Gender Radio Buttons -->
+                    <label>Gender:</label><br>
+                    <input type="radio" id="male" name="gender" value="male" required>
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+                    <input type="radio" id="other" name="gender" value="other">
+                    <label for="other">Other</label><br><br>
+
+                    <!-- Date of Birth -->
+                     <label for="dob">Date of Birth:</label><br>
+                     <input type="date" id="dob" name="dob" required><br><br>
+
+                     <!-- Country Dropdown -->
+                      <label for="country">Country:</label><br>
+                      <select name="country" id="country" required>
+                        <option value="">Select your country</option>
+                        <option value="usa">United States</option>
+                        <option value="uk">United Kingdom</option>
+                        <option value="canada">Canada</option>
+                      </select><br><br>
+
+                      <!-- Terms and Conditions checkbox -->
+                       <input type="checkbox" name="terms" id="terms" required class = 'check'>
+                       <label for="terms">I accept the <a href="#">Terms and conditions</a> and <a href="#">Privacy Policy</a></label><br><br>
+
+                       <!-- Additional Information (textarea) -->
+                        <label for="bio">Tell us about yourself (optional):</label><br>
+                        <textarea name="bio" id="bio" rows="4" cols="50" placeholder="Share something about your financial goals..."></textarea><br><br>
+
+                        <!-- Form Buttons -->
+                         <button type="submit" class = 'Form-Buttons'>Create Account</button> 
+
+                         <!-- <button type="reset">Clear Form</button> -->
+            </form>
+
+            <!-- <p>Already have an account? <a href="login.html">Login here</a></p> -->
+        </section>
+    </main>
+
+    <footer>
+        <!-- <hr> -->
+        <p>&copy; 2026 Personal Expense Tracker. All rights reserved "Group 1".</p>
+    </footer> 
+</body>
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaction History | Personal Expense Tracker</title>
+    <link rel="stylesheet" href="css/transc.css">
+
+      <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .income {
+            color: green;
+            font-weight: bold;
+        }
+        .expense {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class ='main-heading1'>Personal Expense Tracker</h1>
+        <hr>
+        <nav>
+            <a href="index.html">Home</a> | 
+            <a href="dashboard.html">Dashboard</a> | 
+            <a href="add-transaction.html">Add Transaction</a> | 
+            <a href="transactions.html">Transactions</a> | 
+            <a href="login.html">Logout</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Transaction History</h2>
+            <p>View and manage all your financial transactions</p>
+            
+            <!-- Filter Options -->
+            <div style="margin: 20px 0;">
+                <label for="filter-type">Filter by Type:</label>
+                <select id="filter-type">
+                    <option value="all">All Transactions</option>
+                    <option value="income">Income Only</option>
+                    <option value="expense">Expenses Only</option>
+                </select>
+                
+                <label for="filter-category" style="margin-left: 20px;">Filter by Category:</label>
+                <select id="filter-category">
+                    <option value="all">All Categories</option>
+                    <option value="salary">Salary</option>
+                    <option value="food">Food & Dining</option>
+                    <option value="transport">Transportation</option>
+                </select>
+                
+                <button style="margin-left: 20px;">Apply Filters</button>
+            </div>
+
+            <!-- Transactions Table -->
+            <table>
+                <thead>
+                    <tr>
+                        <th>Transaction ID</th>
+                        <th>Date</th>
+                        <th>Type</th>
+                        <th>Category</th>
+                        <th>Amount ($)</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Sample Transaction 1 -->
+                    <tr>
+                        <td>#T001</td>
+                        <td>2026-03-15</td>
+                        <td class="income">Income</td>
+                        <td>Salary</td>
+                        <td class="income">+3,500.00</td>
+                        <td>Monthly salary deposit</td>
+                    </tr>
+                    
+                    <!-- Sample Transaction 2 -->
+                    <tr>
+                        <td>#T002</td>
+                        <td>2026-03-14</td>
+                        <td class="expense">Expense</td>
+                        <td>Food & Dining</td>
+                        <td class="expense">-85.20</td>
+                        <td>Grocery shopping at Supermarket</td>
+                    </tr>
+                    
+                    <!-- Sample Transaction 3 -->
+                    <tr>
+                        <td>#T003</td>
+                        <td>2026-03-12</td>
+                        <td class="expense">Expense</td>
+                        <td>Transportation</td>
+                        <td class="expense">-45.00</td>
+                        <td>Fuel for car</td>
+                    </tr>
+                    
+                    <!-- Sample Transaction 4 -->
+                    <tr>
+                        <td>#T004</td>
+                        <td>2026-03-10</td>
+                        <td class="income">Income</td>
+                        <td>Freelance</td>
+                        <td class="income">+750.00</td>
+                        <td>Web development project</td>
+                    </tr>
+                    
+                    <!-- Sample Transaction 5 -->
+                    <tr>
+                        <td>#T005</td>
+                        <td>2026-03-08</td>
+                        <td class="expense">Expense</td>
+                        <td>Utilities</td>
+                        <td class="expense">-120.50</td>
+                        <td>Electricity bill payment</td>
+                    </tr>
+                    
+                    <!-- Sample Transaction 6 -->
+                    <tr>
+                        <td>#T006</td>
+                        <td>2026-03-05</td>
+                        <td class="expense">Expense</td>
+                        <td>Entertainment</td>
+                        <td class="expense">-35.00</td>
+                        <td>Movie tickets</td>
+                    </tr>
+                    
+                    <!-- Sample Transaction 7 -->
+                    <tr>
+                        <td>#T007</td>
+                        <td>2026-03-01</td>
+                        <td class="income">Income</td>
+                        <td>Investment</td>
+                        <td class="income">+1,000.00</td>
+                        <td>Dividend payment</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th colspan="4">Summary</th>
+                        <th>$5,250.00</th>
+                        <th>Total Income</th>
+                    </tr>
+                    <tr>
+                        <th colspan="4"></th>
+                        <th>-$3,420.50</th>
+                        <th>Total Expenses</th>
+                    </tr>
+                </tfoot>
+            </table>
+            
+            <!-- <p><a href="add-transaction.html">Add New Transaction</a></p> -->
+        </section>
+    </main>
+
+    <footer>
+        <!-- <hr> -->
+        <p>&copy; 2026 Personal Expense Tracker. All rights reserved "Group 1".</p>
+    </footer>
+    
+</body>
+</html>

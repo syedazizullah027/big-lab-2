@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Transaction | Personal Expense Tracker</title>
+    <link rel="stylesheet" href="css/add-trans.css">
+
+</head>
+<body>
+     <header>
+        <h1 class = 'main-heading1'>Personal Expense Tracker</h1>
+        <hr>
+        <nav>
+            <a href="index.html">Home</a> | 
+            <a href="dashboard.html">Dashboard</a> | 
+            <a href="add-transaction.html">Add Transaction</a> | 
+            <a href="transactions.html">Transactions</a> | 
+            <a href="login.html">Logout</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2 class = 'heading-trans'>Add New Transaction</h2>
+            <!-- <p>Record your income or expense below</p> -->
+            
+            <form>
+                <!-- Transaction Type Dropdown -->
+                <label for="type">Transaction Type:</label><br>
+                <select id="type" name="type" required>
+                    <option value="">Select transaction type</option>
+                    <option value="income">Income</option>
+                    <option value="expense">Expense</option>
+                </select><br><br>
+
+                <!-- Amount Field -->
+                <label for="amount">Amount ($):</label><br>
+                <input type="number" id="amount" name="amount" min="0.01" step="0.01" placeholder="Enter amount (e.g., 99.99)" required><br><br>
+
+                <!-- Category Dropdown -->
+                <label for="category">Category:</label><br>
+                <select id="category" name="category" required>
+                    <option value="">Select a category</option>
+                    <optgroup label="Income">
+                        <option value="salary">Salary</option>
+                        <option value="freelance">Freelance</option>
+                        <option value="investment">Investment</option>
+                        <option value="gift">Gift</option>
+                    </optgroup>
+                    <optgroup label="Expense">
+                        <option value="food">Food & Dining</option>
+                        <option value="transport">Transportation</option>
+                        <option value="utilities">Utilities</option>
+                        <option value="entertainment">Entertainment</option>
+                        <option value="shopping">Shopping</option>
+                        <option value="healthcare">Healthcare</option>
+                    </optgroup>
+                </select><br><br>
+
+                <!-- Date Field -->
+                <label for="date">Date:</label><br>
+                <input type="date" id="date" name="date" required><br><br>
+
+                <!-- Description Textarea -->
+                <label for="description">Description:</label><br>
+                <textarea id="description" name="description" rows="4" cols="50" placeholder="Enter additional details about this transaction" required></textarea><br><br>
+
+                <!-- Form Buttons -->
+                <button type="submit">Save Transaction</button>
+                <!-- <button type="reset">Reset Form</button> -->
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <!-- <hr> -->
+        <p>&copy; 2026 Personal Expense Tracker. All rights reserved "Group 1".</p>
+    </footer>
+    
+</body>
+</html>s
